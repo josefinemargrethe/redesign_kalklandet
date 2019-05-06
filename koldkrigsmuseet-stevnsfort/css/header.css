@@ -1,0 +1,159 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#mobile_nav {
+    background-image: url(../svg/burger_menu_stevnsfort.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    left: 85vw;
+    top: 5vh;
+    z-index: 1;
+
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #377288;
+    overflow-y: hidden;
+    transition: 0.5s;
+
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.overlay a {
+    margin-bottom: 10vh;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+#landingpage {
+    background-image: url(../svg/logo_main.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 5vh;
+
+
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #818181;
+
+}
+
+
+.closebtn {
+    background-image: url(../svg/close_btn.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 85vw;
+    top: 5vh;
+
+}
+
+.overlay .closebtn {}
+
+#desktop_nav {
+    display: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 800px) {
+
+    header {
+        position: static;
+        margin-bottom: -100px;
+    }
+
+    #mobile_nav {
+        display: none;
+
+    }
+
+    #desktop_nav {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 5vw;
+        z-index: 1;
+
+    }
+
+    #desktop_nav a {
+        margin-left: 5vw;
+        text-decoration: none;
+        color: #377288;
+    }
+
+    #logobox {
+        position: static;
+        width: 48vw;
+        height: 100px;
+        overflow: hidden;
+        z-index: 1;
+
+
+    }
+
+
+    #logo_main {
+        background-image: url(../svg/logo_main_stevnsfort.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 50%;
+        width: 150px;
+        position: absolute;
+        left: 25px;
+        top: 3vh;
+    }
+
+    #logo_sub {
+        background-image: url(../svg/logo_sub_stevnsfort.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 50%;
+        width: 70px;
+        position: absolute;
+        left: 180px;
+        top: 3vh;
+    }
+
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////MENU_EFFECTS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+.hide {
+    display: none;
+
+}

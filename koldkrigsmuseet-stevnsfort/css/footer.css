@@ -1,0 +1,63 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////Footer//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#footer {
+    position: relative;
+    background: #377288;
+    color: white;
+    text-align: center;
+
+}
+
+#footer #textbox {
+    padding-top: 30px;
+    line-height: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+
+#footer #socialbox {
+    padding-bottom: 30px;
+}
+
+#socialbox img {
+    height: 30px;
+    margin: 20px
+}
+
+
+
+@media only screen and (min-width: 800px) {
+
+    #footer {
+        text-align: left;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: flex;
+
+    }
+
+    #footer #textbox {
+        padding-top: 25px;
+        line-height: 20px;
+        width: 50%;
+        margin: 0;
+
+    }
+
+
+    #footer #socialbox {
+        padding: 20px;
+    }
+
+
+
+    #socialbox img {
+        height: 30px;
+        margin: 20px;
+
+    }
+
+}

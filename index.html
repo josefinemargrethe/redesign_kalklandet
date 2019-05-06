@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Oplev dansk historie på Østsjællands Museum, Kalklandet, og Koldkrigsmuseum Stevnsfort. Her finder du hemmelige skatte, der gemmer sig i kalken i området">
+    <meta name="keywords" content="kalklandet, geomuseum faxe, koldkrigsmuseum stevnsfort, stevns klint, unsesco verdensarv, den kolde krig, geologi, sten, kalk, kalkbrud, fossiljagt, fossil, fossilsafari, museum, museer, geologimuseum, udflugter sjælland, visit denmark, sydkystdanmark, historie museum, verdenskrig, turistattraktion, tæt på københavn, udflugter for børn, familieudflugt, sexy bmw, historieundervisning, naturundervisning, naturfag, geologiundervisning, skoleudflugt, underjordisk fort, undergrund, bunker, kanoner, mød en soldat">
+
+    <title>Hjem | Kalklandet Østsjællands Museum</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <style>
+        @font-face {
+            font-family: 'limestonebold';
+            src: url('fonte/limestone_bold-webfont.woff2') format('woff2'),
+                url('fonte/limestone_bold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+
+
+        @font-face {
+            font-family: 'limestoneheavy';
+            src: url('fonte/limestone_heavy-webfont.woff2') format('woff2'),
+                url('fonte/limestone_heavy-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+
+
+        @font-face {
+            font-family: 'limestonelight';
+            src: url('fonte/limestone_light-webfont.woff2') format('woff2'),
+                url('fonte/limestone_light-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+
+
+        @font-face {
+            font-family: 'limestoneregular';
+            src: url('fonte/limestone_regular-webfont.woff2') format('woff2'),
+                url('fonte/limestone_regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+
+
+
+
+
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            background-color: #efece2;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        #index {
+
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+
+        .logo {
+            background-image: url("svg/logoheader.svg");
+            background-size: cover;
+            width: 60vw;
+            height: 8vh;
+            position: absolute;
+            z-index: 10;
+            opacity: 0.8;
+            left: 3vw;
+            top: 5vh;
+        }
+
+
+        #splash {
+            background-image: url("svg/mobileportrait.svg");
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        .zoom {
+            animation-name: zoom_kf;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes zoom_kf {
+            from {
+                transform: scale(1);
+                transform-origin: 100% 75%;
+            }
+
+            to {
+                transform: scale(3.5);
+                transform-origin: 100% 75%;
+            }
+        }
+
+        .stateZoomEnd {
+            transform: scale(3.5);
+            transform-origin: 100% 75%;
+
+
+        }
+
+
+
+        #museumswrapper img {
+            width: 65px;
+            position: absolute;
+        }
+
+        #museumswrapper {
+            opacity: 0;
+        }
+
+        .fadein {
+            animation-name: fadein_kf;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+
+        }
+
+
+        @keyframes fadein_kf {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+
+        #stevnsfort_logo img {
+            left: 72vw;
+            top: 93vw;
+            position: absolute;
+        }
+
+        #stevnsklint_logo img {
+            left: 81vw;
+            top: 73vw;
+            position: absolute;
+        }
+
+        #geomuseum_logo img {
+            left: 46vw;
+            top: 73vw;
+            position: absolute;
+        }
+
+        #nyeretids_logo img {
+            left: 45vw;
+            top: 93vw;
+            position: absolute;
+        }
+
+
+
+
+        button {
+            position: absolute;
+            right: 1vw;
+            top: 2vw;
+            border: none;
+            background-color: #c1b89b;
+            width: 30vw;
+            height: 8vh;
+            color: white;
+            font-family: 'limestonebold';
+            font-size: 2rem;
+            letter-spacing: .2rem;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (min-width: 500px) and (orientation: landscape) {
+            #index {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            #splash {
+                background-image: url("svg/mobilelandscape.svg");
+                width: 100vw;
+                height: 100vh;
+            }
+
+
+            .logo {
+                height: 15vh;
+                width: 35vw;
+            }
+
+            button {
+
+                right: 2vw;
+                top: 2vw;
+                width: 15vw;
+                height: 15vh;
+                font-size: 2rem;
+                letter-spacing: .2rem;
+            }
+
+            .zoom {
+                animation-name: zoom_kf;
+                animation-duration: 5s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes zoom_kf {
+                from {
+                    transform: scale(1);
+                    transform-origin: 88% 65%;
+                }
+
+                to {
+                    transform: scale(3.5);
+                    transform-origin: 89% 70%;
+                }
+            }
+
+            .stateZoomEnd {
+                transform: scale(3.5);
+                transform-origin: 89% 70%;
+
+
+            }
+
+            #museumswrapper {
+                opacity: 0;
+            }
+
+            .fadein {
+                animation-name: fadein_kf;
+                animation-duration: 0.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+
+
+            }
+
+
+            @keyframes fadein_kf {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            #museumswrapper img {
+                width: 65px;
+            }
+
+            #stevnsfort_logo img {
+                left: 64vw;
+                top: 37vw;
+                position: absolute;
+            }
+
+            #stevnsklint_logo img {
+                left: 77vw;
+                top: 27vw;
+                position: absolute;
+            }
+
+            #geomuseum_logo img {
+                left: 49vw;
+                top: 26vw;
+                position: absolute;
+            }
+
+            #nyeretids_logo img {
+                left: 45vw;
+                top: 37vw;
+                position: absolute;
+            }
+
+        }
+
+        @media only screen and (min-width: 628px) and (orientation: portrait) {
+            #index {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            #splash {
+                background-image: url("svg/tabletportrait.svg");
+                width: 100vw;
+                height: 100vh;
+                /*                133vh*/
+            }
+
+            .zoom {
+                animation-name: zoom_kf;
+                animation-duration: 5s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes zoom_kf {
+                from {
+                    transform: scale(1);
+                    transform-origin: 88% 65%;
+                }
+
+                to {
+                    transform: scale(3.5);
+                    transform-origin: 88% 65%;
+                }
+            }
+
+            .stateZoomEnd {
+                transform: scale(3.5);
+                transform-origin: 88% 65%;
+
+
+            }
+
+            #museumswrapper {
+                opacity: 0;
+            }
+
+            .fadein {
+                animation-name: fadein_kf;
+                animation-duration: 1.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+
+
+            }
+
+
+            @keyframes fadein_kf {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            #museumswrapper img {
+                width: 65px;
+            }
+
+            #stevnsfort_logo img {
+                left: 71vw;
+                top: 77vw;
+                position: absolute;
+            }
+
+            #stevnsklint_logo img {
+                left: 81vw;
+                top: 67vw;
+                position: absolute;
+            }
+
+            #geomuseum_logo img {
+                left: 58vw;
+                top: 68vw;
+                position: absolute;
+            }
+
+            #nyeretids_logo img {
+                left: 54vw;
+                top: 78vw;
+                position: absolute;
+            }
+
+        }
+
+        @media only screen and (min-width: 769px) and (orientation: landscape) {
+
+            #index {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            #splash {
+                background-image: url("svg/tabletlandscape.svg");
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .zoom {
+                animation-name: zoom_kf;
+                animation-duration: 5s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes zoom_kf {
+                from {
+                    transform: scale(1);
+                    transform-origin: 91% 80%;
+                }
+
+                to {
+                    transform: scale(3.5);
+                    transform-origin: 91% 80%;
+                }
+            }
+
+            .stateZoomEnd {
+                transform: scale(3.5);
+                transform-origin: 91% 80%;
+
+
+            }
+
+            #museumswrapper {
+                opacity: 0;
+            }
+
+            .fadein {
+                animation-name: fadein_kf;
+                animation-duration: 1.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+
+
+            }
+
+
+            @keyframes fadein_kf {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            #museumswrapper img {
+                width: 65px;
+            }
+
+            .logo {
+                height: 10vh;
+            }
+
+            button {
+
+                right: 2vw;
+                top: 2vw;
+                width: 15vw;
+                height: 10vh;
+                font-size: 2rem;
+                letter-spacing: .2rem;
+            }
+
+            #stevnsfort_logo img {
+                left: 75vw;
+                top: 45vw;
+                position: absolute;
+            }
+
+            #stevnsklint_logo img {
+                left: 81vw;
+                top: 39vw;
+                position: absolute;
+            }
+
+            #geomuseum_logo img {
+                left: 58vw;
+                top: 39vw;
+                position: absolute;
+            }
+
+            #nyeretids_logo img {
+                left: 57vw;
+                top: 46vw;
+                position: absolute;
+            }
+
+
+        }
+
+
+        /*        Betingelser for Desktop/Fuldskærm*/
+
+        @media only screen and (min-width: 1025px) {
+
+            #index {
+                width: 100vw;
+                height: 56.25vw;
+                overflow: hidden;
+            }
+
+            #splash {
+                background-image: url("svg/desktop2.svg");
+                width: 100vw;
+                height: 56.25vw;
+
+                background-size: cover;
+            }
+
+            .zoom {
+                animation-name: zoom_kf;
+                animation-duration: 4s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes zoom_kf {
+                from {
+                    transform: scale(1);
+                    transform-origin: 90% 65%;
+                }
+
+                to {
+                    transform: scale(3.5);
+                    transform-origin: 90% 65%;
+                }
+            }
+
+            .stateZoomEnd {
+                transform: scale(3.5);
+                transform-origin: 90% 65%;
+
+
+            }
+
+            .logo {
+                height: 13vh;
+                width: 25vw;
+            }
+
+            #museumswrapper img {
+                width: 65px;
+
+
+            }
+
+            #museumswrapper {
+                opacity: 0;
+            }
+
+            .fadein {
+                animation-name: fadein_kf;
+                animation-duration: 0.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+
+
+            }
+
+
+            @keyframes fadein_kf {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+
+
+            #stevnsfort_logo img {
+                left: 69vw;
+                top: 39vw;
+                position: absolute;
+                height: 65px;
+            }
+
+            #stevnsklint_logo img {
+                left: 74vw;
+                top: 33vw;
+                position: absolute;
+                height: 65px;
+            }
+
+            #geomuseum_logo img {
+                left: 58vw;
+                top: 32vw;
+                position: absolute;
+                height: 65px;
+            }
+
+            #nyeretids_logo img {
+                left: 57vw;
+                top: 38vw;
+                position: absolute;
+                height: 65px;
+            }
+
+
+            #sfpop {
+                width: 0;
+                height: 65px;
+                /*                left: 100%;*/
+                background-color: rgba(54, 110, 134, 0.66);
+                position: absolute;
+                left: 70vw;
+                top: 39vw;
+                transition: .9s ease;
+                overflow: hidden;
+
+
+            }
+
+            #stevnsfort_logo:hover #sfpop {
+                left: 70vw;
+                width: 135px;
+                padding-left: 3vw;
+                padding-right: 4vw;
+
+            }
+
+            #gmpop {
+                width: 0;
+                height: 65px;
+                background-color: rgba(25, 166, 162, 0.55);
+                position: absolute;
+                left: 59vw;
+                top: 32vw;
+                transition: .9s ease;
+                overflow: hidden;
+
+
+            }
+
+            #geomuseum_logo:hover #gmpop {
+                left: 59vw;
+                width: 135px;
+                padding-left: 4vw;
+
+
+            }
+
+            #skpop {
+                width: 0;
+                height: 65px;
+                background-color: rgba(0, 126, 166, 0.46);
+                position: absolute;
+                left: 75vw;
+                top: 33vw;
+                transition: .9s ease;
+                overflow: hidden;
+
+
+            }
+
+            #stevnsklint_logo:hover #skpop {
+                left: 75vw;
+                width: 105px;
+                padding-left: 4vw;
+
+
+            }
+
+            #ntpop {
+                width: 0;
+                height: 65px;
+                background-color: rgba(154, 69, 54, 0.52);
+                position: absolute;
+                left: 58vw;
+                top: 38vw;
+                transition: .9s ease;
+                overflow: hidden;
+
+
+            }
+
+            #nyeretids_logo:hover #ntpop {
+                left: 58vw;
+                width: 85px;
+                padding-left: 4vw;
+
+
+            }
+
+            #ntpop .text {
+                padding-top: .5vw;
+            }
+
+            .text {
+                color: white;
+                font-family: 'limestoneregular';
+                padding: 1vw;
+                letter-spacing: 3px;
+            }
+
+        }
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: limestoneregular;
+        }
+
+        #om {
+            position: absolute;
+            right: 5%;
+            top: 5vh;
+            opacity: 0.8;
+
+            font-size: 2rem;
+
+            background-color: #bab192;
+            padding: 10px 50px;
+
+            z-index: 5;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+
+    </header>
+
+    <section id="index">
+
+        <a href="om.html">
+            <div id="om">OM</div>
+        </a>
+
+
+        <div id="splash"></div>
+
+
+
+        <div id="museumswrapper">
+
+
+            <a href="./koldkrigsmuseet-stevnsfort/forside.html">
+                <div id="stevnsfort_logo">
+
+                    <div id="sfpop">
+                        <div class="text">Koldkrigsmuseet <b>Stevnsfortet</b></div>
+                    </div>
+                    <img src="svg/stevnsfortlogo.svg" alt="Stevnsfort logo">
+                </div>
+            </a>
+
+            <a href="./geomuseum-faxe/forside.html">
+                <div id="geomuseum_logo">
+                    <div id="gmpop">
+                        <div class="text"><b>Geomuseum</b> Faxe</div>
+                    </div>
+                    <img src="svg/geomuseumlogo.svg" alt="Geomuseum Faxe logo">
+                </div>
+            </a>
+
+            <a href="./stevns-klint/forside.html">
+                <div id="stevnsklint_logo">
+                    <div id="skpop">
+                        <div class="text"><b>Stevns Klint</b></div>
+                    </div>
+                    <img src="svg/stevnsklintlogo.svg" alt="Stevns Klint logo">
+                </div>
+            </a>
+
+
+            <a href="./nyeretids-kultur/forside.html">
+                <div id="nyeretids_logo">
+                    <div id="ntpop">
+                        <div class="text">Nyere tids <b>Kultur</b></div>
+                    </div>
+                    <img src="svg/nyeretidslogo.svg" alt="Nyere tids Kultur logo">
+                </div>
+            </a>
+        </div>
+
+
+
+
+    </section>
+
+    <!--
+    <a href="om.html">
+        <button>OM</button></a>
+-->
+
+    <script>
+        window.addEventListener("load", pageLoaded);
+
+        function pageLoaded() {
+
+
+            visStart();
+
+            //            readOrSetCookie();
+
+        }
+        //        function readOrwrieSessionstorage(){
+        //
+        //
+        //
+        //
+        //        }
+        function visStart() {
+            if (sessionStorage.getItem("animationShown") != "true") {
+                document.querySelector("#splash").classList.add("zoom");
+                document.querySelector("#splash").addEventListener("animationend", visLogoer);
+                sessionStorage.setItem("animationShown", "true");
+            } else {
+                document.querySelector("#splash").classList.add("stateZoomEnd");
+                visLogoer();
+
+            }
+
+
+        }
+
+        function visLogoer() {
+            document.querySelector("#splash").removeEventListener("animationend", visLogoer);
+
+            document.querySelector("#museumswrapper").classList.add("fadein");
+
+        }
+
+    </script>
+</body>
+
+</html>

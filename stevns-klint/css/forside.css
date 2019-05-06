@@ -1,0 +1,935 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section3d_img {
+    pointer-events: none;
+}
+
+#mobile_nav {
+    background-image: url(../svg/burger_menu.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    left: 85vw;
+    top: 5vh;
+    z-index: 1;
+
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #007EA6;
+    overflow-y: hidden;
+    transition: 0.5s;
+
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.overlay a {
+    margin-bottom: 10vh;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+#landingpage {
+    background-image: url(../svg/logo_main.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 5vh;
+
+
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #818181;
+
+}
+
+
+.closebtn {
+    background-image: url(../svg/close_btn.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 85vw;
+    top: 5vh;
+
+}
+
+.overlay .closebtn {}
+
+#desktop_nav {
+    display: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 800px) {
+
+    header {
+
+        position: static;
+        margin-bottom: -100px;
+    }
+
+    #mobile_nav {
+        display: none;
+
+    }
+
+    #desktop_nav {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 5vw;
+        z-index: 1;
+
+    }
+
+    #desktop_nav a {
+        margin-left: 5vw;
+        text-decoration: none;
+        color: white;
+    }
+
+    #logobox {
+        position: static;
+        width: 48vw;
+        height: 100px;
+        overflow: hidden;
+
+    }
+
+
+    #logo_main {
+        background-image: url(../svg/logo_main.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 50%;
+        width: 150px;
+        position: absolute;
+        left: 25px;
+        top: 3vh;
+        z-index: 1;
+    }
+
+    #logo_sub {
+        background-image: url(../svg/logo_sub.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 50%;
+        width: 70px;
+        position: absolute;
+        left: 180px;
+        top: 3vh;
+        z-index: 1;
+
+    }
+
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////MENU_EFFECTS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+.hide {
+    display: none;
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////scroll_indikator///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 3s ease-in-out infinite;
+    -moz-animation: fade_move_down 3s ease-in-out infinite;
+    animation: fade_move_down 3s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade_move_down {
+    0% {
+        -moz-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -moz-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////General////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    animation: black_in 2s;
+    animation-delay: 2s;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////FX////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(5vh)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////SECTION_1_Mobil//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#section1m {
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: 0;
+
+
+    width: 100%;
+    height: 100vh;
+}
+
+#section1m h1 {
+    font-size: 12vw;
+    text-align: center;
+    padding-top: 40vh;
+    color: white;
+    animation: fade-in 2s both;
+    animation-delay: 1s;
+
+
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////SECTION_2_Mobil//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#section2m {
+
+    position: static;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+
+}
+
+#section2m h2 {
+    font-size: 1.8rem;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+
+
+}
+
+
+#section2m p {
+    font-size: 1.5rem;
+    line-height: 50px;
+    margin: 0 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////SECTION_3_Mobil//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#section3m {
+
+    position: static;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+
+}
+
+#section3m h2 {
+    font-size: 1.8rem;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+
+
+}
+
+
+#section3m p {
+    font-size: 1.5rem;
+    line-height: 50px;
+    margin: 0 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+
+}
+
+#section3m a {
+
+    color: white;
+    text-decoration: underline;
+
+}
+
+#section3d a {
+
+    color: white;
+    text-decoration: underline;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////SECTION_4_Mobil//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#section4m {
+
+    position: relative;
+
+
+
+}
+
+#section4m h1 {
+    position: relative;
+    color: #007EA6;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+
+
+#desktop_sections {
+    display: none;
+}
+
+
+#map {
+    margin: 50px;
+}
+
+#transport {
+    background-color: rgba(0, 126, 166, 0.18);
+    height: 130px;
+}
+
+#transport h2 {
+    color: #007EA6;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+
+}
+
+
+#openings {
+    background-color: rgba(0, 126, 166, 0.25);
+    height: 150px;
+}
+
+#openings h2 {
+    color: #007EA6;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+
+}
+
+
+#openings p {
+    color: #007EA6;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+#pricelist {
+    background-color: rgba(0, 126, 166, 0.30);
+    padding: 50px;
+    text-align: center;
+
+}
+
+
+#pricelist h1 {
+    color: #007EA6;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 20px;
+
+}
+
+
+
+#pricelist {
+    color: #007EA6;
+
+}
+
+.pricelist {
+
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#buttons {
+    padding-top: 35px;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+
+}
+
+#grupper_btn {
+    color: white;
+    background-color: #007EA6;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+
+#guide_btn {
+    color: white;
+    background-color: #007EA6;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////MEDIA_QUERY_SECTION//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*media query for iphone se*/
+
+@media only screen and (max-width: 350px) {
+
+    #section2m h2 {
+        padding-top: 50%;
+    }
+
+    #section3m h2 {
+        padding-top: 50%;
+    }
+
+
+}
+
+/*DESKTOP Query*/
+
+
+@media only screen and (min-width: 900px) {
+
+
+
+    #mobile_sections {
+        display: none;
+    }
+
+    #desktop_sections {
+        display: block;
+    }
+
+    #mobile_footer {
+        display: none;
+    }
+
+
+
+    /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////SECTION_1_DESKTOP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+    #section1d {
+
+        position: relative;
+
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0;
+        z-index: 0;
+
+
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    #section1d h1 {
+        font-size: 5rem;
+        text-align: center;
+        padding-top: 40vh;
+        color: white;
+        animation: fade-in 2s both;
+        animation-delay: 1s;
+
+
+    }
+
+
+    /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////SECTION_2_DESKTOP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+    #section2d {
+
+        padding: 100px 0;
+
+        position: relative;
+        background:
+            none;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        z-index: 0;
+        background-color: rgba(0, 126, 166, 0.05);
+
+        display: flex;
+
+    }
+
+    #section2d_textbox {
+        width: 50vw;
+        height: auto;
+
+        padding-top: 50px;
+        padding: 5%;
+        height: 100%;
+
+        box-shadow: rgba(10, 72, 70, 0.3) 0 0 10px;
+
+        background-color: #007EA6;
+
+
+    }
+
+    #section2d h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: white;
+
+
+
+    }
+
+
+    #section2d p {
+        font-size: 1.1rem;
+        line-height: 50px;
+
+        color: white;
+
+    }
+
+
+
+
+    #section2d_img {
+        width: 60vw;
+        height: 100%;
+        right: 60px;
+        margin: 5%;
+        margin-top: 20vh;
+        margin-bottom: -20vh;
+
+        box-shadow: rgba(10, 72, 70, 0.3) 0 0 10px;
+
+
+
+    }
+
+
+
+
+
+
+
+    /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////SECTION_3_DESKTOP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+    #section3d {
+
+        padding: 100px 0;
+
+        position: relative;
+        background:
+            none;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        z-index: 0;
+        background-color: rgba(0, 126, 166, 0.05);
+
+        display: flex;
+
+    }
+
+    #section3d_textbox {
+        width: 50vw;
+        height: auto;
+
+        padding-top: 50px;
+        padding: 5%;
+        height: 100%;
+        background-color: #007EA6;
+
+        box-shadow: rgba(10, 72, 70, 0.3) 0 0 10px;
+
+
+    }
+
+    #section3d h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: white;
+
+
+
+    }
+
+
+    #section3d p {
+        font-size: 1.1rem;
+        line-height: 50px;
+
+        color: white;
+
+    }
+
+
+
+
+    #section3d_img {
+        width: 60vw;
+        height: 100%;
+        right: 60px;
+        margin: 5%;
+        margin-top: 20vh;
+        margin-bottom: -20vh;
+
+        box-shadow: rgba(10, 72, 70, 0.3) 0 0 10px;
+
+
+
+    }
+
+
+
+    /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////SECTION_4_DESKTOP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+    #section4d {
+        flex-wrap: wrap;
+        display: flex;
+        height: 100vh;
+    }
+
+    #section4d #map_section {
+        background-color: rgba(0, 126, 166, 0.05);
+
+        width: 50vw;
+    }
+
+
+    #section4d h1 {
+        text-align: center;
+        color: #007EA6;
+        padding-top: 50px;
+
+    }
+
+
+    #desktop_map {
+
+        width: 400px;
+
+        margin: 50px auto;
+    }
+
+    #section4d #info_section {
+        width: 50vw;
+    }
+
+    #section4d #transport h2 {
+        margin: 0;
+    }
+
+    #section4d {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    #openings {
+        height: auto;
+    }
+
+    #openings h2 {
+        margin-top: 0;
+        padding: 0;
+        margin: 0;
+
+        padding: 70px;
+    }
+
+    #section4d #pricelist {
+        position: relative;
+    }
+
+
+    #section4d #pricelist h2 {
+        text-align: center;
+        margin-left: 50px;
+        margin: 0;
+        padding-bottom: 80px;
+
+    }
+
+
+
+    #section4d #pricelist p {
+
+        text-align: center;
+        margin: auto;
+        font-size: 1.2rem;
+        padding-bottom: 80px;
+        width: 80%;
+
+
+    }
+
+
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////FOOTER_MOBILE//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#phone-box-m {
+    text-align: center;
+}
+
+
+
+#mobile_footer {
+    width: 100vw;
+    background: #007EA6;
+}
+
+#phone-box-m img {
+    height: 40px;
+    width: 40px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+#text-box-m {
+    text-align: center;
+    color: white;
+    width: 80vw;
+    margin: auto;
+    line-height: 30px;
+
+}
+
+#mobile_footer #socialbox {
+
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 50vw;
+
+}
+
+
+#mobile_footer #socialbox img {
+
+    height: 30px;
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////FOOTER_DESKTOP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+@media only screen and (min-width: 900px) {
+
+    #mobile_footer {
+        display: none;
+    }
+
+    #desktop_footer {
+        background: #007EA6;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    #phone-box {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 20px;
+        width: 50%;
+    }
+
+
+    #phone-box img {
+        height: 40px;
+        padding: 0 20px;
+
+    }
+
+    #desktop_footer #socialbox {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 20px;
+        width: 50%;
+
+
+    }
+
+    #desktop_footer #socialbox img {
+        height: 40px;
+    }
+
+
+}

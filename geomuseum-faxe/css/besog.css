@@ -1,0 +1,587 @@
+/*/////////////////////////////////////////////////////////////////////////////////////////Generelt/////////////////////////////////////////////////////////////////////////*/
+
+* {
+    margin: 0;
+    font-family: helvetica neue;
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////Kontekst_menu/////////////////////////////////////////////////////////////////////////*/
+#kontekst {}
+
+
+.headline1 {
+    text-align: center;
+    color: #19A6A2;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 400;
+
+}
+
+#kontekts_menu_mobil {
+    text-align: center;
+    background-color: rgba(25, 166, 162, 0.14);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+}
+
+#kontekts_menu_mobil a {
+    color: #19A6A2;
+    text-decoration: none;
+    width: 100vw;
+    padding: 20px 0;
+
+}
+
+#kontekts_menu_desktop {
+    display: none;
+}
+
+
+
+#sjaelland {
+    display: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////adresse/////////////////////////////////////////////////////////////////////////*/
+
+
+#adresse {
+    text-align: center;
+    background: rgba(25, 166, 162, 0.14);
+    padding-bottom: 50px;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+
+#adresse h2 {
+    color: white;
+    background: #19A6A2;
+    padding: 20px 0;
+
+}
+
+#adrdiv {
+    padding-top: 50px;
+    color: #19A6A2;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////aabning/////////////////////////////////////////////////////////////////////////*/
+
+#abning {
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+
+
+
+#abning h1 {
+    margin-bottom: 30px;
+    color: #19A6A2;
+
+
+}
+
+#saesson_boks {
+    background-color: rgba(25, 166, 162, 0.14);
+    margin: 50px 0;
+
+
+}
+
+#saesson_boks h2 {
+    color: white;
+    background-color: #19A6A2;
+    padding: 20px 0;
+
+}
+
+#saesson_data {
+    color: #19A6A2;
+    padding: 20px 0;
+    line-height: 50px;
+
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////tabs/////////////////////////////////////////////////////////////////////////*/
+
+
+
+.accordion {
+    background: rgba(25, 166, 162, 0.14);
+    color: #19A6A2;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accon {
+    margin-bottom: 50px;
+
+}
+
+
+
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: center;
+    color: #19A6A2;
+    line-height: 50px;
+
+}
+
+.panel a {
+    color: #19A6A2;
+}
+
+
+
+#mobiltabs {
+    display: block;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+#find_vej {
+    text-align: center;
+
+}
+
+#find_vej h2,
+#priser h2,
+#guidet_ture h2 {
+    color: white;
+    background-color: #19A6A2;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+
+
+
+
+
+#desktoptabs {
+    display: none;
+}
+
+
+.farve1 {
+    background: rgba(25, 166, 162, 0.30);
+}
+
+.farve2 {
+    background: rgba(25, 166, 162, 0.25);
+}
+
+
+.farve3 {
+    background: rgba(25, 166, 162, 0.18);
+}
+
+
+.farve4 {
+    background: rgba(25, 166, 162, 0.09);
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////desktop/////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width: 800px) {
+
+    /*//////////////////////////////////////////////////////////////////////////////////////generelt/////////////////////////////////////////////////////////////////////////*/
+
+    #mobiltabs {
+        display: none;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////////////kontekst_menu/////////////////////////////////////////////////////////////////////////*/
+
+    #kontekst_wrapper {
+        position: relative;
+
+    }
+
+    #kontekst {
+        margin-top: 200px;
+        position: relative;
+        margin-bottom: 50px;
+
+    }
+
+    .headline1 {
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        margin-top: 0;
+
+    }
+
+    #kontekts_menu_desktop a {
+        color: #19A6A2;
+        text-decoration: none;
+
+
+    }
+
+    #kontekts_menu_mobil {
+        display: none;
+    }
+
+
+
+    #kontekts_menu_desktop {
+        display: block;
+        justify-content: space-between;
+        display: flex;
+
+    }
+
+    #kontekts_menu_desktop {
+        background-color: rgba(255, 255, 255, 0);
+        flex-wrap: nowrap;
+        width: 40%;
+        position: absolute;
+        right: 5%;
+        top: 60%;
+        font-size: 1.5rem;
+        text-align: right;
+
+    }
+
+
+    #background_wrapper {
+        height: 350px;
+        background-color: rgba(25, 166, 162, 0.14);
+        position: relative;
+
+
+    }
+
+    #sjaelland {
+        display: block;
+        width: 40vw;
+
+        position: absolute;
+        top: -100px;
+        left: 5%;
+        min-width: 450px;
+
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////////////adresse/////////////////////////////////////////////////////////////////////////*/
+
+
+    #adresse {
+        width: 30vw;
+        margin-left: 55vw;
+        margin-top: 100px;
+        min-width: 350px;
+
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////////////aabningstider/////////////////////////////////////////////////////////////////////////*/
+
+    #abning {
+        margin: auto;
+        margin-top: 100px;
+        width: 90%;
+        margin-bottom: 100px;
+
+
+    }
+
+    #abncon {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+    }
+
+    #abncon h2 {
+        font-size: 1.2rem;
+
+
+    }
+
+    #saesson_boks {
+        width: 22%;
+
+    }
+
+    #saesson_data {
+        font-size: 1.5vw;
+    }
+
+
+
+
+    /*//////////////////////////////////////////////////////////////////////////////////////desktop_tabs/////////////////////////////////////////////////////////////////////////*/
+
+
+
+    #desktoptabs {
+        display: block;
+    }
+
+
+
+
+    #desktoptabs {
+        display: block;
+    }
+
+    #mobiltabs {
+        display: none;
+    }
+
+    #edu_map img {
+        width: 30vw;
+
+    }
+
+    button {
+        padding: 40px;
+    }
+
+    #footer {
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: flex;
+
+
+    }
+
+
+    #footer {
+        text-align: left;
+
+    }
+
+    #edu_title {
+        padding-top: 0;
+    }
+
+
+
+
+    #footer #textbox {
+        padding-top: 25px;
+        line-height: 20px;
+        width: auto;
+        margin: 0;
+
+    }
+
+
+    #footer #socialbox {
+        padding: 20px;
+    }
+
+    #socialbox img {
+        height: 30px;
+        margin: 20px;
+    }
+
+    #socialbox {
+        width: auto;
+
+    }
+
+
+    /*////////////////////////////////////////////////////////////////////////////////tab_style/////////////////////////////////*/
+
+    /* Style the tab */
+
+
+
+    #tab_size {
+        width: 70%;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .tab {
+
+        overflow: hidden;
+        border: 0;
+        background-color: #19A6A2;
+
+
+    }
+
+    /* Style the buttons inside the tab */
+
+    #button_position {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+    .tab button {
+
+
+        border-radius: 10px;
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        margin: 10px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        ;
+
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: rgba(255, 255, 255, 0.26);
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: rgba(255, 255, 255, 0.56);
+    }
+
+
+    /* Style the close button */
+    .topright {
+        float: right;
+        cursor: pointer;
+        font-size: 28px;
+    }
+
+    .topright:hover {
+        color: red;
+    }
+
+    #tab_size a {
+        color: #19A6A2;
+
+    }
+
+    /*////////////////////////////////////////////////////////////////////////////////TRANSPORT_TAB/////////////////////////////////*/
+
+    #desk_findvej h1 {
+        text-align: center;
+        color: #19A6A2;
+    }
+
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 50px 80px;
+        border: 0;
+        border-top: none;
+        background-color: rgba(25, 166, 162, 0.19);
+        color: #19A6A2;
+        line-height: 30px;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+
+    /*////////////////////////////////////////////////////////////////////////////////PRICE_TAB/////////////////////////////////*/
+
+
+    #desk_priser h1 {
+        text-align: center;
+        color: #19A6A2;
+    }
+
+    .tabcontent2 {
+        display: none;
+        padding: 50px 40px;
+        border: 0;
+        border-top: none;
+        background-color: rgba(25, 166, 162, 0.19);
+        color: #19a6a2;
+        line-height: 50px;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 50px;
+
+
+    }
+
+
+
+
+    /*////////////////////////////////////////////////////////////////////////////////GUIDE_TAB/////////////////////////////////*/
+
+    #desk_guidetture h1 {
+        text-align: center;
+        color: #19A6A2;
+    }
+
+    .tabcontent3 {
+        display: none;
+        padding: 50px 40px;
+        border: 0;
+        border-top: none;
+        background-color: rgba(25, 166, 162, 0.19);
+        color: #19a6a2;
+        line-height: 30px;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+
+    }
+
+
+
+
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////footer/////////////////////////////////*/
+
+
+#footer {
+    margin: 0;
+}

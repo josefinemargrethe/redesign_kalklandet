@@ -1,0 +1,124 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////General////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+* {
+    margin: 0;
+    font-family: helvetica neue;
+
+}
+
+#logomain {
+    width: 30vh;
+    padding: 2vh;
+}
+
+@media only screen and (min-width: 800px) {
+    body {}
+}
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////MAIN//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#om_title h1 {
+
+    color: #848484;
+    text-align: center;
+    margin: 80px 0;
+
+}
+
+
+
+#menu_options {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(220, 216, 214, 0.33);
+    margin-bottom: 80px;
+
+
+
+}
+
+
+
+#menu_options h1 {
+    display: none;
+
+
+}
+
+#menu_positions a {
+    text-decoration: none;
+    color: #848484;
+    line-height: 15vh;
+    cursor: pointer;
+
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    body {}
+
+    main {
+        height: 100vh;
+    }
+
+
+    #om_title h1 {
+        display: none;
+    }
+
+    #menu_options h1 {
+        display: block;
+        color: #848484;
+        position: absolute;
+        right: 5vw;
+        bottom: 25vh;
+    }
+
+    #menu_options {
+        margin: 0;
+        padding: 0;
+        height: 50vh;
+
+
+    }
+
+    #menu_positions {
+        position: absolute;
+        width: 100%;
+        bottom: 10vh;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+    #menu_options {
+
+        position: absolute;
+        top: 50%;
+        margin-top: -30vh;
+        width: 100vw;
+
+
+
+    }
+
+    #menu_options a {
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding-bottom: 200px;
+    }
+
+
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Østsjællands Museum er et statsanerkendt museum, der arbejder med nyere tids kulturhistorie og geologi. Kalklandet er vores overordnede tema">
+    <meta name="keywords" content="kalklandet, geomuseum faxe, koldkrigsmuseum stevnsfort, stevns klint, unsesco verdensarv, den kolde krig, geologi, sten, kalk, kalkbrud, fossiljagt, fossil, fossilsafari, museum, museer, geologimuseum, udflugter sjælland, visit denmark, sydkystdanmark, historie museum, verdenskrig, turistattraktion, tæt på københavn, udflugter for børn, familieudflugt, sexy bmw, historieundervisning, naturundervisning, naturfag, geologiundervisning, skoleudflugt, underjordisk fort, undergrund, bunker, kanoner, mød en soldat">
+
+    <title>Resultater | Kalklandet Østsjællands Museum</title>
+
+    <link rel="stylesheet" href="css_om/arrow.css">
+    <link rel="stylesheet" href="css_om/footer.css">
+    <link rel="stylesheet" href="css_om/tab-box.css">
+    <link rel="stylesheet" href="css_om/mobile_tab.css">
+    <link rel="stylesheet" href="../css/fonte.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<img id="arrow" src="svg/arrow.svg" alt="arrow" onclick="goBack()">
+
+<body>
+
+    <!--    //mobil-->
+
+    <div id="mobile_box">
+        <div id="box_title">
+            <h1>OM</h1>
+        </div>
+
+
+        <section id="guidet_ture">
+
+            <div id="accon_title">
+                <h2>Resultater</h2>
+            </div>
+
+            <div class="acccon">
+
+
+
+                <button class="accordion  farve1 ">Fondstøtte </button>
+
+                <div class="panel farve1 fond_info_m">
+                </div>
+
+                <button class="accordion farve2">Priser</button>
+
+                <div class="panel farve2 prices_info_m">
+                </div>
+
+                <button class="accordion farve3">Publikationer</button>
+
+                <div class="panel farve3 publikationer_info_m">
+                </div>
+
+
+                <button class="accordion farve4">Arsberegninger</button>
+
+                <div class="panel farve4 year1_info_m">
+                </div>
+
+                <button class="accordion farve5">Årsregnskab</button>
+
+                <div class="panel farve5 year2_info_m">
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!--    desktop-->
+
+
+
+    <div id="tab_box">
+
+
+        <div id="tab_size">
+            <div class="tab">
+                <div id="tab_header">
+                    <h1>Vores resultater</h1>
+                </div>
+                <div id="button_position">
+
+
+                    <button class="tablink" onclick="openOption(event, 'fond')" id="defaultOpen">Fondstøtte</button>
+                    <button class="tablink" onclick="openOption(event, 'prices')">Priser</button>
+                    <button class="tablink" onclick="openOption(event, 'publication')">Publikationer</button>
+                    <button class="tablink" onclick="openOption(event, 'year1')">Årsberetning</button>
+                    <button class="tablink" onclick="openOption(event, 'year2')">Årsregnskab</button>
+
+                </div>
+            </div>
+
+            <div id="fond" class="tabcontent">
+
+                <div id="fond_info"></div>
+
+            </div>
+
+            <div id="prices" class="tabcontent">
+
+                <div id="prices_info"></div>
+            </div>
+
+            <div id="publication" class="tabcontent">
+
+                <div id="publication_info"></div>
+            </div>
+
+            <div id="year1" class="tabcontent">
+
+                <div id="year1_info"></div>
+            </div>
+
+            <div id="year2" class="tabcontent">
+
+                <div id="year2_info"></div>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div id="footer">
+
+            <div id="textbox">
+                <p class="phone phone_m"></p>
+                <p class="phone_times phone_times_m"></p>
+
+            </div>
+
+            <div id="socialbox">
+
+                <a id="myAnchor" href="mailto:kalklandet@mail.dk">
+                    <img src="svg/mail.svg" alt="mailicon">
+                </a>
+
+                <a id="facebookAnchor" href="https://www.facebook.com/stevnsklint/">
+                    <img src="svg/facebook.svg" alt="facebookicon">
+                </a>
+
+                <a id="instagramAnchor" href="https://www.instagram.com/oestsjaellandsmuseum/">
+                    <img src="svg/instagram.svg" alt="instaicon">
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="js-general/header.js"></script>
+    <script src="js-general/footer.js"></script>
+    <script src="js-general/tab-box.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="js-om/resultater/resultater.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////General////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+* {
+    margin: 0;
+    font-family: helvetica neue;
+
+
+}
+
+h1 {
+    line-height: 50px;
+}
+
+
+a {
+    color: #377288;
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////MAIN//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#om_title h1 {
+
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2rem;
+
+}
+
+
+
+
+#menu_options {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #377288;
+    color: white;
+
+
+
+
+}
+
+
+
+#menu_positions a {
+    text-decoration: none;
+    color: #848484;
+    line-height: 15vh;
+    cursor: pointer;
+
+}
+
+#om-tekst h4 {
+    padding-bottom: 20px;
+}
+
+
+#om-tekst {
+    text-align: center;
+    line-height: 30px;
+    padding: 50px 10vw;
+    background: rgba(55, 114, 136, 0.1);
+    color: #377288;
+
+
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    #om-tekst {
+        text-align: left;
+        padding: 50px 10vw;
+    }
+
+
+    #menu_options h1 {
+        color: white;
+        letter-spacing: 3px;
+        font-size: 3rem;
+        text-align: right;
+        padding-right: 10vw;
+        ;
+    }
+
+    body {}
+
+    main {}
+
+
+    #om_title h1 {
+        display: none;
+    }
+
+
+
+    #menu_options {
+        margin: 0;
+        padding: 2;
+
+    }
+
+    #menu_positions {
+        width: 100%;
+        bottom: 10vh;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #menu_options {
+
+        margin-top: 15%;
+        width: 100vw;
+
+
+    }
+
+    #menu_options a {
+        font-size: 1.2frem;
+    }
+
+
+
+}

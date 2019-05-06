@@ -1,0 +1,125 @@
+#mobile_box {
+    padding: 5vw;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+#box_title {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #818181;
+}
+
+
+#accon_title {
+    text-align: center;
+    background-color: #818181;
+    color: white;
+    padding: 20px;
+
+}
+
+
+.acccon {
+    overflow: hidden;
+    padding-bottom: ;
+}
+
+.accordion {
+    cursor: pointer;
+    width: 100%;
+
+    /*    position: absolute;*/
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+    border: 0;
+
+}
+
+
+button {
+
+    display: grid;
+    padding: 30px;
+    color: #818181;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+
+}
+
+
+
+
+/* Styling på accordion panel. */
+.panel {
+
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 50px;
+    line-height: 30px;
+    color: #818181;
+    transition: max-height 0.2s ease-out;
+
+
+}
+
+
+.panel a {
+    color: #818181;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 800px) {
+
+    #mobile_box {
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+/*farvekoder til menuerne*/
+
+
+
+.farve1 {
+    background-color: rgba(129, 129, 129, 0.45);
+}
+
+.farve2 {
+    background-color: rgba(129, 129, 129, 0.37)
+}
+
+.farve3 {
+    background-color: rgba(129, 129, 129, 0.30);
+}
+
+.farve4 {
+    background-color: rgba(129, 129, 129, 0.25);
+}
+
+.farve5 {
+    background-color: rgba(129, 129, 129, 0.17);
+}
+
+.farve6 {
+    background-color: rgba(129, 129, 129, 0.10);
+}

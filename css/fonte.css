@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'limestonebold';
+    src: url('fonte/limestone_bold-webfont.woff2') format('woff2'),
+        url('fonte/limestone_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'limestoneheavy';
+    src: url('fonte/limestone_heavy-webfont.woff2') format('woff2'),
+        url('fonte/limestone_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'limestonelight';
+    src: url('fonte/limestone_light-webfont.woff2') format('woff2'),
+        url('fonte/limestone_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'limestoneregular';
+    src: url('../fonte/limestone_regular-webfont.woff2') format('woff2'),
+        url('../fonte/limestone_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+li,
+button {
+    font-family: limestoneregular;
+}
+
+p {
+    font-family: helvetica;
+    font-weight: 200;
+}
+
+
+a {
+    text-decoration: none;
+}
